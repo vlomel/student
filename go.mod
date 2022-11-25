@@ -1,3 +1,3 @@
-module github.com/Vlomel/student
+module github.com/vlomel/student
 
 go 1.19
