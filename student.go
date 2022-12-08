@@ -19,7 +19,7 @@ func Put(list map[string]*Student, value *Student) (int, error) {
 	list[value.Name] = value
 
 	if list[value.Name] == nil {
-		return -1, errors.New("Ошибка добавления данных в список")
+		return -1, errors.New("Ошибка добавления данных в список!")
 	} else {
 		return 0, nil
 	}
@@ -27,7 +27,7 @@ func Put(list map[string]*Student, value *Student) (int, error) {
 
 func Get(list map[string]*Student, name string) (*Student, error) {
 	if list[name] == nil {
-		return nil, errors.New("Студент в списке не найден")
+		return nil, errors.New("Студент в списке не найден!")
 	} else {
 		return list[name], nil
 	}
